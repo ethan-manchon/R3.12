@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+
+        <script>
+         let section = document.createElement("section");
+         section.style = "background-color: darkcyan;width:300px;padding:3%";
+         document.body.append(section);
+
+         let div1 = document.createElement("div");
+         div1.style = "background-color:darkseagreen;width:100px;padding:2%";
+        //  document.querySelector("section").append(div1);
+        section.append(div1);
+
+         let div2 = document.createElement("div");
+         div2.style = "background-color:burlywood;width:100px;padding:2%";
+        //  document.querySelector("section").append(div2);
+         section.append(div2);
+        
+        let p1 = document.createElement("p");
+        p1.textContent = "Lorem ipsum dolor";
+        // document.querySelectorAll("div")[0].append(p1);
+        div1.append(p1);
+
+
+        let p2 = document.createElement("p");
+        p2.textContent = "sit amet consectetur";
+        // document.querySelectorAll("div")[1].append(p2);
+        div2.append(p2);
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+<!-- <body>
+    <section style="background-color: darkcyan;width:300px;padding:3%">
+    <div style="background-color:darkseagreen;width:100px;padding:2%">
+    <p>Lorem ipsum dolor</p>
+    </div>
+    <div style="background-color:burlywood;width:100px;padding:2%">
+    <p>sit amet consectetur</p>
+    </div>
+    </section>
+    </body> -->

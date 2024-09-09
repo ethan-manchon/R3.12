@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <span id="JS">Javascript</span>
+    <script>
+        let elt = document.querySelector("span");
+        elt.textContent = elt.textContent + " c'est très bien";
+        // elt.textContent += " c'est très bien";
+    </script>
+
+    <!-- 
+    <a id="wiki" href="https://wikipedia.org">wiki</a>
+    <a id="unilim" href="https://unilim.fr">unilim</a>
+    <script>
+        let wiki = document.querySelector("#wiki");
+        let unilim = document.querySelector("#unilim");
+
+        let url_temp = wiki.href;
+        wiki.href = unilim.href;
+        unilim.href = url_temp;</script> --> 
+ 
+    <a href="https://wikipedia.org">wiki</a>
+    <a href="https://unilim.fr">unilim</a>
+    <a href="https://lemonde.fr">Le monde</a>
+    <a href="https://google.com">Google </a>
+    <script>
+        let all = document.querySelectorAll("a");
+
+        for (let i=0; i < all.length ; i++) {
+
+            let pos1 = Math.floor(Math.random() * all.length);
+            let pos2 = Math.floor(Math.random() * all.length);
+        
+            let lien1 = all[pos1];
+            let lien2 = all[pos2];
+
+            let tmp = lien1.href;
+            lien1.href = lien2.href;
+            lien2.href = tmp;
+        }
+        // let all = document.querySelectorAll("a");
+
+        // for (let i=0; i < all.length ; i++) {
+
+        //     let lien1 = all[pos1];
+        //     lien1.remove();
+
+        // }
+    </script>
+</body>
+</html>
