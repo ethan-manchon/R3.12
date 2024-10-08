@@ -1,0 +1,26 @@
+.tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    &__elmt {
+        height: max-content;
+        padding: 1rem;
+        text-decoration: none;
+        color: hsl(var(--clr-white));
+        border-bottom: transparent 4px solid;
+
+        &-bold {
+            font-weight: var(--fw-700);
+        }
+
+        &:hover {
+            border-bottom: solid 4px hsl(var(--clr-light));
+        }
+
+        &:active {
+            border-bottom: solid 4px hsl(var(--clr-white));
+        }
+    }
+    
+}

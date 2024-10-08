@@ -1,0 +1,26 @@
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+
+    &__elmt {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-decoration: none;
+        background-color: hsl(0, 0%, 39%);
+        border-radius: 1rem;
+
+        &:hover {
+            background-color: hsl(0, 0%, 67%);
+
+        }
+
+        &:active {
+            background-color: hsl(0, 0%, 100%);
+
+        }
+    }
+
+}

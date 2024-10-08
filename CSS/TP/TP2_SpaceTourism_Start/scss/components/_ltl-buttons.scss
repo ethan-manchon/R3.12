@@ -1,0 +1,27 @@
+.ltl-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+    .ltl-button {
+        width: fit-content;
+        aspect-ratio: 1/1;
+        text-align: center;
+        border-radius: 100%;
+        padding: 1rem;
+        text-decoration: none;
+        color: hsl(var(--clr-white));
+        border: 2px solid hsl(var(--clr-light));
+        background-color: hsl(var(--clr-dark));
+
+        &:hover {
+            border: solid 2px hsl(var(--clr-white));
+        }
+
+        &:active {
+            color: hsl(var(--clr-dark));
+            border: 2px solid transparent;
+            background-color: hsl(var(--clr-white));
+        }
+    }

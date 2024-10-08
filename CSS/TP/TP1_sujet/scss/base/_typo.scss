@@ -1,0 +1,48 @@
+// List 
+$weights : 400, 700;
+$sizes: 8, 20, 36;
+
+// Map
+$font-sizes: (
+    900: 60px,
+    800: 48px,
+    700: 27px,
+    600: 24px,
+    400: 18px,
+);
+
+    // Map²
+$colors: (
+    neutral: (
+    100: #fff,
+    900: #1f3049, 
+    ),
+    primary: (
+    400: #0066ff, 
+    ),
+);
+
+
+:root {
+    --ff-sans: "Open Sans", sans-serif;
+    // List 
+    @each $weight in $weights {
+      --fw-#{$weight} : #{$weight}; 
+    };
+    @each $size in $sizes {
+      --size-#{$size} : #{$size}px; 
+    };
+
+    // Map
+    @each $name, $font-size in $font-sizes {
+      --fs-#{$name} : #{$font-size}; 
+    }
+
+    // Map²
+    @each $name, $map in $colors {
+        @each  $color, $hexa in $map {
+            --color-#{$name}-#{$color} : #{$hexa}; 
+        }
+    }
+
+}

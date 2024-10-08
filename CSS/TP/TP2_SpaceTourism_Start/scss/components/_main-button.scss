@@ -1,0 +1,36 @@
+.main-button {
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    aspect-ratio: 1/1;
+    padding: 2rem;
+    position: relative;
+    background-color: hsl(var(--clr-white));
+    transition: 0.1s;
+    color: hsl(var(--clr-dark));
+    border-radius: 100%;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        background-color: hsl(var(--clr-light));
+        Border-radius: 100%;
+        z-index: -1;
+
+    }
+
+    &:hover::after {
+        scale : 1.8;
+        transition: 0.2s;
+    }
+}
+
+
+

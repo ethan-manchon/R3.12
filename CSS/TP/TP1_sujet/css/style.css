@@ -1,0 +1,86 @@
+:root {
+  --ff-sans: "Open Sans", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+  --size-8: 8px;
+  --size-20: 20px;
+  --size-36: 36px;
+  --fs-900: 60px;
+  --fs-800: 48px;
+  --fs-700: 27px;
+  --fs-600: 24px;
+  --fs-400: 18px;
+  --color-neutral-100: #fff;
+  --color-neutral-900: #1f3049;
+  --color-primary-400: #0066ff;
+}
+
+body {
+  background-color: var(--color-neutral-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  color: var(--color-neutral-100);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  font-family: var(--ff-sans);
+}
+
+.pricing-plan {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 0.5rem solid var(--color-primary-400);
+  background-color: var(--color-neutral-100);
+  padding: 2rem;
+}
+
+.plan__title {
+  margin-block: 0;
+  color: var(--color-primary-400);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-700);
+}
+.plan__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+}
+.plan__list-item {
+  font-weight: var(--fw-400);
+  padding: 0.5rem;
+  color: var(--color-neutral-900);
+}
+.plan__button {
+  align-self: center;
+  width: fit-content;
+  padding: 1rem;
+  background-color: var(--color-primary-400);
+  color: var(--color-neutral-100);
+  border-radius: 0.25rem;
+}
+
+span {
+  font-weight: var(--fw-700);
+  font-size: var(--fs-700);
+  color: var(--color-neutral-900);
+}
+
+/*# sourceMappingURL=style.css.map */

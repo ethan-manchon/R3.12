@@ -1,0 +1,40 @@
+// mettre les mixins
+@mixin text($ff : --ff-sans-normal, $fs : --fs-s-300, $fw : --fw-400) {
+    font-family: var($ff);
+    font-size: var($fs);
+    font-weight: var($fw);
+    text-transform: uppercase;
+    color: hsl(var(--clr-white));
+}
+// faire une map et un each
+.title1 {
+    @include text(--ff-serif, --fs-l-800, --fw-400);
+}
+.title2 {
+    @include text(--ff-serif, --fs-l-700, --fw-400);
+}
+.title3 {
+    @include text(--ff-serif, --fs-l-600, --fw-400);
+}
+.title4 {
+    @include text(--ff-serif, --fs-l-500, --fw-400);
+}
+.title5 {
+    @include text(--ff-sans-cond, --fs-l-400, --fw-700);
+    letter-spacing: 4.75px;
+}
+.subheading-1 {
+    @include text(--ff-serif, --fs-m-600, --fw-400);
+}
+.subheading-2 {
+    @include text(--ff-sans-cond, --fs-s-400, --fw-400);
+    letter-spacing: 2.35px;
+}
+.nav-text {
+    @include text(--ff-sans-cond, --fs-m-400, --fw-400);
+    letter-spacing: 4.75px;
+}
+.text {
+    @include text();
+    text-transform: none;
+}
