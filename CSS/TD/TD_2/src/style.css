@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Ajouter une class à tailwind 
+.btn-red {
+    @apply bg-red-500 text-white font-bold;
+} */
+
+
+/* ajoute notre code au css
+@layer  base {
+} */
+
+@layer base  { 
+    :root {
+        --clr-yellow: 75 80 55;
+        --clr-yellow-btn: 65 70 45;
+
+        --clr-red: 0 50 50;
+        --clr-red-btn: 0 40 40;
+
+        --clr-indigo: 239 84 67;
+        --clr-indigo-btn: 229 64 57;
+
+        --clr-text: 100 100 100;
+        --clr-white: 100 100 100;
+        --clr-black: 10 10 10;
+        --clr-bg: var(--clr-indigo);
+        --clr-button: var(--clr-indigo-btn);
+        --clr-text-btn: var(--clr-indigo);
+
+    }
+    .red {
+        --clr-bg: var(--clr-red);
+        --clr-button: var(--clr-red-btn);
+        --clr-text-btn: var(--clr-red);
+
+    }
+    .yellow {
+        --clr-button: var(--clr-yellow-btn);
+        --clr-bg: var(--clr-yellow);
+        --clr-text-btn: var(--clr-white);
+        --clr-text: var(--clr-black);
+    }
+}
