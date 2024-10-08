@@ -1,0 +1,12 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    background-color: var((--clr-neutral-VeryLightGray));
+    &__content {
+        width: 18rem; 
+    }
+}
+

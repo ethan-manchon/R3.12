@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.google.com/specimen/Plus+Jakarta+Sans");
+
+:root {
+/* #### Primary */
+    --clr-red: hsl(1, 90%, 64%);
+    --clr-blue: hsl(219, 85%, 26%);
+
+/* #### Neutral */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-very-light-grayish-blue: hsl(210, 60%, 98%);
+    --clr-light-grayish-blue-1: hsl(211, 68%, 94%);
+    --clr-light-grayish-blue-2: hsl(205, 33%, 90%);
+    --clr-grayish-blue: hsl(219, 14%, 63%);
+    --clr-dark-grayish-blue: hsl(219, 12%, 42%);
+    --clr-very-dark-blue: hsl(224, 21%, 14%);
+
+    --ff-jakarta: "Plus Jakarta Sans", sans-serif;
+}
+

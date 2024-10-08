@@ -1,0 +1,48 @@
+$colors: (
+    primary:(
+        red: hsl(0, 78%, 62%),
+        cyan: hsl(180, 62%, 55%),
+        orange: hsl(34, 97%, 64%),
+        blue: hsl(212, 86%, 64%),
+    ),
+    neutral:(
+        VeryDarkBlue: hsl(234, 12%, 34%),
+        GrayishBlue: hsl(229, 6%, 66%),
+        VeryLightGray: hsl(0, 0%, 98%),
+    ),
+);
+
+$font-weight: 200, 400, 600;
+
+$font-sizes: (
+
+        800: 2rem,
+        700: 1.5rem,
+        500: 1.25rem,
+        300: 1rem,
+        200: 0.875rem,
+    );
+
+$fonts: (
+    poppins: '"Poppins", sans-serif',
+);
+
+:root {
+@each $name, $type in $colors {
+    @each  $nm, $clr in $type {
+        --clr-#{$name}-#{$nm} : #{$clr}; 
+    }
+};
+
+@each $weight in $font-weight {
+    --fw-#{$weight} : #{$weight}; 
+};
+@each $name, $size in $font-sizes {
+    --fs-#{$name} : #{$size}; 
+};
+
+@each $name, $font in $fonts {
+    --ff-#{$name} : #{$font}; 
+};
+
+}

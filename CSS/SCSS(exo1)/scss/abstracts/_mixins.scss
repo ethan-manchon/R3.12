@@ -1,0 +1,22 @@
+@mixin text($ff : --ff-poppins, $fs : --fs-s-300, $fw : --fw-400, $clr : --clr-neutral-VeryDarkBlue) {
+    font-family: var($ff);
+    font-size: var($fs);
+    font-weight: var($fw);
+    color: var($clr);
+}
+
+.page__title {
+    @include text(--ff-poppins, --fs-800, --fw-200, --clr-neutral-VeryDarkBlue);
+}
+.title-important {
+    @include text(--ff-poppins, --fs-800, --fw-600, --clr-neutral-VeryDarkBlue);
+}
+.page__content {
+    @include text(--ff-poppins, --fs-400, --fw-400, --clr-neutral-GrayishBlue);
+}
+.card__title {
+    @include text(--ff-poppins, --fs-500, --fw-600, --clr-neutral-VeryDarkBlue);
+}
+.card__content {
+    @include text(--ff-poppins, --fs-300, --fw-400, --clr-neutral-GrayishBlue);
+}
