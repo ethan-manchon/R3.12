@@ -1,4 +1,4 @@
-#🚀 Apprentissage de JavaScript
+🚀 Apprentissage de JavaScript
 
 Exploration et apprentissage du langage JavaScript, en mettant en pratique des concepts fondamentaux et avancés à travers divers exercices et projets interactifs.
 
